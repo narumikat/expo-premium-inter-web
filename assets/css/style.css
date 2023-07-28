@@ -28,7 +28,9 @@
 }
 
 html {
-  font-family: 'Raleway', sans-serif;
+  font-family: articulat-cf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -37,7 +39,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: articulat-cf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -149,7 +153,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   line-height: 1.2;
-  font-family: 'Playfair Display', serif;
+  font-family: moret, serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h1, .h1 {
@@ -1645,6 +1651,39 @@ fieldset:disabled a.btn {
    transition:.25s;
 }
 
+@media (max-width: 390px) {
+  .card-cont {
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 20px; /* Define o espaçamento entre os cards */
+    /* Adicione outras propriedades de dimensionamento conforme necessário */
+  }
+
+
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+  }
+
+  .options .option {
+    flex-basis: 300px ;
+    margin: 10px;
+  }
+
+  .options .option.active {
+    max-height: 100px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .options .option:not(.active) {
+    flex-basis: 100px;
+    border-radius: 0;
+  }
+}
+
 .credit {
   position: absolute;
   bottom: 20px;
@@ -1829,6 +1868,13 @@ fieldset:disabled a.btn {
   height: 250px;
 }
 
+@media (max-width: 767px) {
+  .stand-container img.flutuar1,
+  .stand-container img.flutuar2 {
+    display: none; /* Esconde as imagens em dispositivos menores */
+  }
+}
+
 .stand-container img {
   max-height: 600px;
 
@@ -1848,6 +1894,115 @@ fieldset:disabled a.btn {
   object-fit: cover;
   opacity: 0.6;
 }
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adicione esta propriedade para alinhar verticalmente */
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+
+.gallery h4,
+.row h4 {
+    padding-top: 20%;
+    color: #fff;
+    font-family: moret, serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center; /* Adicione esta propriedade para alinhar horizontalmente */
+    margin: 0; /* Remova a margem padrão para evitar espaçamentos indesejados */
+}
+
+
+
+.purple-cont {
+  padding: 0;
+}
+
+
+@media (max-width: 390px) {
+  .row {
+      flex-direction: column;
+      margin-left: 0;
+      padding-left: 0;
+  }
+
+  .gallery .row {
+      margin-right: 0;
+      margin-left: 0;
+  }
+
+  .purple-cont h4 {
+    padding-bottom: 2rem;
+  }
+
+  .col-md-4 {
+    height: 10rem;
+    margin-bottom: 3px;
+  }
+
+  .col-md-5 {
+      margin-right: 0;
+      margin-bottom: 2px;
+  }
+
+  .red-cont {
+    margin-left:0;
+    padding-left: 3px;
+    margin-top: 3px;
+  }
+
+  .pink-cont {
+    height: 10rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+
 
 .contact-container p {
   color: var(--gray-p);
