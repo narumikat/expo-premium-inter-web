@@ -43,10 +43,10 @@
                         <a class="nav-link" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Galeria</a>
+                        <a class="nav-link" href="#content">Conteúdo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#partners">Parceiros</a>
+                        <a class="nav-link" href="#form">Reservas</a>
                     </li>
                 </ul>
                 <a class="navbar-brand m-auto" href="#">
@@ -55,14 +55,23 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#contact">Contact Us<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testmonial">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
+                    <span class="nav-item social-icons">
+                        <span class="fa-stack">
+                            <a target="_blank" href="https://www.facebook.com/expopremiuminter">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x" style="color: #cf194b;"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa_instagram">
+                            <a target="_blank" href="https://www.instagram.com/expopremium_inter/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x" style="color: #cf194b;"></i>
+                            </a>
+                        </span>
+                    </span>
+                    
                     <li class="nav-item">
                         <a href="#" class="btn btn-primary ml-xl-4">saiba mais</a>
                     </li>
@@ -75,9 +84,9 @@
             <div class="overlay">
                 <div class="col-md-6 tittle-top">
                 <img class="logo-top" src="assets/imgs/logo-top.png">
-                <h2 class="display-4">Feira de Negócios &amp; Comunidades</h2>
+                <h2 class="display-4" style="color: #fff;">Feira de Negócios &amp; Comunidades</h2>
                 <div class="btn-container">
-                    <a class="btn btn-lg btn-primary" href="#">Seja um patrocinador ou expositor</a>
+                    <a class="btn btn-lg btn-primary" href="#form">Seja um patrocinador ou expositor</a>
                 </div>
                 </div>
         </div>
@@ -166,7 +175,7 @@
         </div>
 
         <div class="section-content">
-        <div id="gallary" class="text-center middle-items">
+        <div id="content" class="text-center middle-items">
             <h2 class="section-title" style="color: #274588;">Conteúdo</h2>
         </div>
         </div>
@@ -343,7 +352,7 @@
         <div class="img-br-jp"></div>
 
         <!-- form Section  -->
-        <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items">
+        <div id="form" class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items">
             <div class="contact-container">
                 <h2 class="section-title mb-5">Reserve seu estande</h2>
                 <div class="row mb-5">
@@ -471,9 +480,9 @@
         
         <div class="container gallery">
             <div class="row">
-                <div class="col-md-5" style="margin-right: 2px;">
+                <div class="col-sm-5" style="margin-right: 2px;">
                     <div class="row" style="margin-bottom: 2px;">
-                        <div class="col-md-8 rounded" style="height: 15rem; background-color: #5795d2; margin-right: 2px;">
+                        <div class="col-sm-8 rounded" style="height: 15rem; background-color: #5795d2; margin-right: 2px;">
                             <h4 style="font-weight: 300;">Venda direta para milhares de visitantes, gerando retorno imediato.</h4>
                         </div>
                         
@@ -489,17 +498,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="purple-cont col-md-4">
+                <div class="purple-cont col-sm-4">
                 <div class=" rounded" style="background-color: #6b4ba1; height: 30rem; margin-left: 3px; padding-right: 5%; padding-left: 5%; padding-top: 5%;">
                     <h4>Divulgação na mídia japonesa, étnica e internacionl nos principais veículos: web sites, revistas, releases, e-mail marketing, banners, redes sociais, e outras ações.</h4>
                 </div>
                 </div>
                 <div class="col" style="padding-left: 0;padding-right: 0; margin-left: 2px;">
                 <div class="red-cont">
-                    <div class="col-md-12 rounded" style="background-color: #d01c19; height: 15rem; margin-bottom: 2px;">
+                    <div class="col-sm-12 rounded" style="background-color: #d01c19; height: 15rem; margin-bottom: 2px;">
                         <h4>15.000 visitantes entre consumidores, empresários e empreendedores.</h4>
                     </div>
-                    <div class="col-md-12 rounded" style="background-color: #1966a1; height: 15rem">
+                    <div class="col-sm-12 rounded" style="background-color: #1966a1; height: 15rem">
                         <h4> Japoneses, brasileiros, filipinos, peruanos, vietnamitas, entre outros estrangeiros.</h4>
                     </div>
                 </div>
@@ -508,41 +517,102 @@
         </div>
         
         <!-- CONTACT Section  -->
-        <div id="contact" class="container-fluid text-light border-top wow fadeIn">
+        <div class="container-fluid text-light border-top wow fadeIn">
             <div class="row map-container">
-                <div class="col-md-6 px-0">
-                    <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+                <div class="col-sm-6 px-0">
+                    <div class="embed-responsive embed-responsive-16by9" style="min-height: 400px;">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1wbxcMiRrkI6lYsW5r--NYU2gDzE9tr4" height="480px" width="600px"></iframe>
+                    </div>
                 </div>
-                <div class="contact-container col-md-6 px-5 has-height-lg middle-items">
+                
+                <div class="contact-container col px-5 has-height-lg middle-items">
                     <h3>Localização</h3>
                     <p>O evento acontecerá dia 04 e 05 de novembro de 2023</p>
                     <div class="text-muted">
                         <p><span class="ti-location-pin pr-3"></span> Aichi-ken, Japão</p>
-                        <p><span class="ti-support pr-3"></span> (123) 456-7890</p>
-                        <p><span class="ti-email pr-3"></span>info@website.com</p>
+                        <p><span class="ti-support pr-3"></span> +81 90-2088-1164</p>
+                        <p><span class="ti-email pr-3"></span>info@expopremium.com.br</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+            <div class="ocean-bottom">
+            <div class="ocean2">
+                <div class="wave-b"></div>
+                <div class="wave-b"></div>
+                <div class="wave-b"></div>
+            </div>
+        </div>
 
-        <!-- page footer  -->
-        <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
-            <div class="row">
+        <div id="contact" class="container-fluid bg-dark text-light has-height-md middle-items text-center wow fadeIn">
+            <div class="row contact-b">
                 <div class="col-sm-4">
-                    <h3>EMAIL US</h3>
-                    <P class="text-muted">info@website.com</P>
+                    <h3>Email</h3>
+                    <P>info@expopremium.com.br</P>
                 </div>
                 <div class="col-sm-4">
-                    <h3>CALL US</h3>
-                    <P class="text-muted">(123) 456-7890</P>
+                    <h3>Local</h3>
+                    <P>〒479-0881 愛知県常滑市セントレア５丁目１０番１号</P>
                 </div>
                 <div class="col-sm-4">
-                    <h3>FIND US</h3>
-                    <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
+                    <h3>Telefone</h3>
+                    <P >+81 90-2088-1164</P>
                 </div>
             </div>
         </div>
-        <div class="bg-dark text-light text-center border-top wow fadeIn">
+
+        <!-- Footer -->
+        <div class="bg-dark border-top wow fadeIn">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5 class="h5-footer text-white">Page links</h5>
+                <ul class="list-unstyled li-space-lg p-small">
+                    <li class="nav-item-b">
+                        <a href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item-b">
+                        <a href="index.html#about">Sobre</a>
+                    </li>
+                    <li class="nav-item-b">
+                        <a href="index.html#content">Conteúdo</a>
+                    </li>
+                    <li class="nav-item-b">
+                        <a href="index.html#form">Reservas</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-md-5">
+                    <h5 class="h5-footer text-white">Links</h5>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li class="nav-item-b">Important: <a href="#">Terms & Conditions</a>, <a href="#">Privacy Policy</a></li>
+                                <li class="nav-item-b">Menu: <a href="index.html">Home</a>, <a href="index.html#about">Sobre</a>, <a href="#">Contact</a>, <a href="index.html#form">Formulário</a></li>
+                            </ul>
+                    </div>
+
+                <div class="col">
+                    <span class="fa-stack" style="padding-top: 1rem;">
+                        <a target="_blank" href="https://www.facebook.com/expopremiuminter">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x icon-b"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack" style="padding-top: 1rem;">
+                        <a target="_blank" href="https://www.instagram.com/expopremium_inter/">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x icon-b"></i>
+                        </a>
+                    </span>
+                    <h5 class="text-white" style="margin-top: 1rem; padding-top: 1rem;">Entre em contato </h5>
+                    <p class="p-small" id="ContactUsFooter"><a href="mailto:info@expopremium.com.br">info@expopremium.com.br</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- end of footer -->
+
+        <div class="bg-dark text-light text-center wow fadeIn">
             <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> <i class="ti-heart text-danger"></i><a href="http://u-innova.com" target="_blank">U-innova</a></p>
         </div>
         <!-- end of page footer -->
@@ -557,14 +627,15 @@
         <!-- wow.js -->
         <script src="assets/vendors/wow/wow.js"></script>
         
-        <!-- google maps -->
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="assets/js/swiper.min.js"></script> 
         <script src="assets/js/purecounter.min.js"></script>
         <script src="assets/js/replaceme.min.js"></script>
         <script src="assets/js/script.js"></script>
+
+        <!-- google maps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API&callback=initMap"></script>
        
         
 

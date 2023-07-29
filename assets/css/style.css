@@ -548,6 +548,45 @@ fieldset:disabled a.btn {
     100% {transform: translateX(-50%);}
 }
 
+.ocean2 {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.ocean-bottom {
+  position: relative;
+  background-color: #5669aa;
+}
+
+.wave-b {
+  background: url(../imgs/waves3-b.svg);
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 20s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.7;
+}
+
+.wave-b:nth-of-type(2) {
+  background: url(../imgs/waves2-b.svg);
+  bottom: 0;
+  animation: wave 20s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave-b:nth-of-type(3) {
+  background: url(../imgs/waves-b.svg);
+  bottom: 0;
+  animation: wave 25s -1s linear infinite;
+  opacity: 1;
+}
+
 
 
 /**********************/
@@ -617,6 +656,22 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
 }
 
+.fa_instagram {
+  margin-right: 10px;
+}
+
+.fa-instagram, .fa-facebook:hover {
+  color: #fff;
+}
+
+.fa-stack-1x:hover {
+  color: #fff !important;
+}
+
+.icon-b {
+  color: #1966a1;
+}
+
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
 }
@@ -633,6 +688,10 @@ fieldset:disabled a.btn {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+}
+
+.nav-item-b {
+  margin-bottom: 2rem;
 }
 
 .nav-tabs .nav-link {
@@ -2030,4 +2089,30 @@ fieldset:disabled a.btn {
 
 .map-container {
   padding: 5%;
+}
+
+.embed-responsive {
+  text-align: center;
+}
+
+@media (max-width: 390px) {
+  iframe {
+    width: 300px;
+  }
+}
+
+.h5-footer {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 2rem;
+}
+
+@media (max-width: 390px) {
+  .contact-b {
+   padding-top: 6rem; 
+  }
 }
