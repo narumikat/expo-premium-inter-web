@@ -1895,18 +1895,26 @@ fieldset:disabled a.btn {
   opacity: 0.6;
 }
 
+.carousel-partners {
+  background-color: #5669AC;
+}
+
 .carousel-wrap {
-  margin: 90px auto;
+  margin: 20px auto;
   padding: 0 5%;
-  width: 80%;
+  width: 90%;
   position: relative;
 }
 
-/* fix blank or flashing items on carousel */
+.owl-carousel {
+  padding-top: 30px;
+}
 .owl-carousel .item {
   position: relative;
-  z-index: 100; 
-  -webkit-backface-visibility: hidden; 
+  z-index: 100;
+  display: flex;  
+  height: 150px;
+  width: 150px;
 }
 
 /* end fix */
@@ -1917,16 +1925,24 @@ fieldset:disabled a.btn {
   color: #cdcbcd;
 }
 
+.owl-carousel .owl-nav {
+  color: #fff;
+  display: none;
+  
+}
+
 .owl-nav i {
   font-size: 52px;
 }
 
 .owl-nav .owl-prev {
   left: -30px;
+  display: inline;
 }
 
 .owl-nav .owl-next {
   right: -30px;
+  display: inline;
 }
 
 .gallery {
