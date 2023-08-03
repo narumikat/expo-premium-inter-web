@@ -147,10 +147,10 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
-  margin-left: 20%;
+  margin-left: 5%;
   margin-bottom: 1rem;
 }
 
@@ -526,7 +526,9 @@ fieldset:disabled a.btn {
 }
 
 .nav-item-b {
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 12px;
+  padding: 0;
 }
 
 .nav-tabs .nav-link {
@@ -1218,6 +1220,7 @@ fieldset:disabled a.btn {
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
 }
 
 .affix {
@@ -1817,8 +1820,9 @@ fieldset:disabled a.btn {
 
 .h5-footer {
   padding-top: 1rem;
-  padding-bottom: 2rem;
-  font-size: 20px;
+  padding-bottom: 1rem;
+  font-size: 15px;
+  margin: 0;
 }
 
 .footer {
