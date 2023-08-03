@@ -1418,7 +1418,7 @@ fieldset:disabled a.btn {
   width: 100%;
   max-width: 600px;
   height: 100%;
-  background: url(../imgs/content.png) no-repeat top left; /* Posiciona a imagem à esquerda */
+  background: url(../imgs/content.png) no-repeat top left;
   background-size: contain;
   margin-left: 30px;
   margin-top: 4%;
@@ -1433,41 +1433,34 @@ fieldset:disabled a.btn {
    margin-left: 3rem;
    align-items:center;
    overflow:hidden;
-   height:70vh;
+   height:70vh auto;
    transition:.25s;
    background: url(../imgs/card-bg.png) no-repeat right;
    background-size: contain;
 }
 
-@media (max-width: 390px) {
-  .card-cont {
-    justify-content: center;
-    gap: 20px;
+@media (max-width: 768px) {
+  .card-section {
+    flex-direction: column; /* Empilhe os elementos verticalmente */
+    justify-content: flex-start; 
   }
-
-
+  
   .options {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: auto;
+    flex-direction: column; /* Empilhe os itens da .options verticalmente */
+    align-items: center; /* Centralize os itens da .options horizontalmente */
+    height: auto; /* Ajuste a altura conforme o conteúdo */
   }
-
+  
   .options .option {
-    flex-basis: 300px ;
-    margin: 10px;
+    min-width: 100%; /* Ocupa toda a largura da tela em telas pequenas */
+    margin: 5px 0; /* Reduza a margem verticalmente para telas pequenas */
   }
-
+  
   .options .option.active {
-    max-height: 100px;
-    margin: 0;
-    border-radius: 0;
+    max-width: 100%; /* Ocupa toda a largura da tela em telas pequenas */
+    margin: 5px 0; /* Reduza a margem verticalmente para telas pequenas */
   }
 
-  .options .option:not(.active) {
-    flex-basis: 100px;
-    border-radius: 0;
-  }
 }
 
 .options {
@@ -1591,13 +1584,15 @@ fieldset:disabled a.btn {
 
 .options .option .label .info .main {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 
 }
 
 .options .option .label .info .sub {
   transition-delay: 0.1s;
   margin-right: 1rem;
+  font-size: 1.2rem;
 }
 
 .stand-container  h2 {
