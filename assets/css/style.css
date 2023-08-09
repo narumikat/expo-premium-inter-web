@@ -471,8 +471,63 @@ small,
 }
 
 @media (max-width: 768px) {
+  .top {
+    height: auto;
+    width: 100%;
+    background: url("../imgs/main-celular.jpg") no-repeat center top;
+    background-size: 100% auto; 
+  }
+
+  .top .overlay {
+    height: auto;
+    background: rgba(99, 99, 99, 0.5);
+    display: flex;
+  }
+
   .logo-top {
-    max-width: 70%;
+    max-width: 50%;
+    padding-top: 1rem;
+  }
+
+  .tittle-top {
+    margin-left: 10%;
+    padding-top: 0.5rem;
+  }
+
+  .top h2 {
+    font-size: 1rem;
+  }
+
+  .top .btn-container {
+    width: 70%;
+  }
+
+  .top .btn-primary {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 844px) {
+  .logo-top {
+    max-width: 50%;
+    padding-top: 1rem;
+  }
+
+  .tittle-top {
+    margin-left: 10%;
+    padding-top: 0.5rem;
+  }
+
+  .top h2 {
+    font-size: 1rem;
+  }
+
+  .top .btn-container {
+    width: 70%;
+  }
+
+  .top .btn-primary {
+    font-size: 0.8rem;
   }
 }
 
@@ -817,7 +872,7 @@ fieldset:disabled a.btn {
     border-radius: 40px;
     background-size: auto 100%;
     opacity: 0.8;
-  
+
   }
 
   .options .option .label .icon {
@@ -1022,10 +1077,14 @@ fieldset:disabled a.btn {
   height: 200px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px), (min-width: 768px) and (max-width: 844px) {
   .stand-container img.flutuar1,
-  .stand-container img.flutuar2, img.flutuar3 {
+  .stand-container img.flutuar2, .stand-container img.flutuar3, .stand-container img.flutuar4 {
     display: none;
+  }
+
+  .stand-container::before {
+    background: none;
   }
 }
 
@@ -1059,6 +1118,17 @@ fieldset:disabled a.btn {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+@media (max-width: 767px) {
+
+  .img-br-jp {
+    height: 20vh;
+    width: 100%;
+    background: url(../imgs/br-to-jp-celular.png) no-repeat center bottom/100% auto;
+  }
+}
+
+
 
 /* form */
 
